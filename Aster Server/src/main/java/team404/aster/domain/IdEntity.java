@@ -1,4 +1,4 @@
-package team404.orchid.domain;
+package team404.aster.domain;
 
 public class IdEntity {
     private Long id;

@@ -1,4 +1,4 @@
-package team404.orchid.domain;
+package team404.aster.domain;
 
 import lombok.*;
 

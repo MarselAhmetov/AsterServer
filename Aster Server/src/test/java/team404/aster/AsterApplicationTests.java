@@ -1,10 +1,10 @@
-package team404.orchid;
+package team404.aster;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OrchidApplicationTests {
+class AsterApplicationTests {
 
     @Test
     void contextLoads() {

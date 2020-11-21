@@ -1,4 +1,4 @@
-package team404.orchid;
+package team404.aster;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 
 @SpringBootApplication
 @EnableWebSecurity
-public class OrchidApplication {
+public class AsterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrchidApplication.class, args);
+        SpringApplication.run(AsterApplication.class, args);
     }
 
 }

@@ -22,7 +22,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String token = authentication.getName();
-
+        System.out.println("Parse token");
         Claims claims;
         try {
             claims = Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();
@@ -33,8 +33,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
         UserDetails userDetails = UserDetailsImpl.builder()
                 .userId(claims.get("userId", String.class))
                 .username(claims.get("username", String.class))
-                .password(claims.get("password", String.class))
-                .role(claims.get("role", Role.class))
+                .role(Role.valueOf(claims.get("role", String.class)))
                 .build();
         authentication.setAuthenticated(true);
         ((JwtAuthentication) authentication).setUserDetails(userDetails);
@@ -44,6 +43,7 @@ public class JwtAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public boolean supports(Class<?> aClass) {
+        System.out.println("Supports?");
         return JwtAuthentication.class.equals(aClass);
     }
 }

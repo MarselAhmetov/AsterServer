@@ -1,0 +1,14 @@
+GET http://localhost:8080/getUsers
+Accept: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZmU3ZjRiNGY3MjlhNjE5ZDhiYjM4ZDIiLCJ1c2VybmFtZSI6Ik1hcnNlbDciLCJyb2xlIjoiVVNFUiJ9.LbJNIIlyckwK6npH6IS5e4qQBOrCveNznJ_XdHsBFSc
+###
+POST http://localhost:8080/signIn
+Content-Type: application/json
+
+{
+  "username": "Marsel7",
+  "password": "111"
+}
+
+###
+

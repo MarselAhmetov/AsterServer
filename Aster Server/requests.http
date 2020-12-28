@@ -11,4 +11,17 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:8080/prepareDocuments
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZmU3ZjRiNGY3MjlhNjE5ZDhiYjM4ZDIiLCJ1c2VybmFtZSI6Ik1hcnNlbDciLCJyb2xlIjoiVVNFUiJ9.LbJNIIlyckwK6npH6IS5e4qQBOrCveNznJ_XdHsBFSc
+
+{
+  "firstName": "Marsel",
+  "lastName": "Akhmetov",
+  "documentNumber": 9486738458,
+  "age": 20,
+  "documentReceiveDate": "2020/03/05"
+}
+
+###
 
